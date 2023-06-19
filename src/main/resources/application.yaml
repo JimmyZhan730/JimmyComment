@@ -1,0 +1,28 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: hmdp
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/jimmycomment?useSSL=false&serverTimezone=UTC
+    username: root
+    password: zxcv34263426
+  redis:
+    host: 192.168.5.211
+#    host: 127.0.0.1
+    port: 6379
+    password: zxcv34263426
+    lettuce:
+      pool:
+        max-active: 10
+        max-idle: 10
+        min-idle: 1
+        time-between-eviction-runs: 10s
+  jackson:
+    default-property-inclusion: non_null # JSON序列化时忽略空值字段
+mybatis-plus:
+  type-aliases-package: com.hmdp.entity # 别名扫描包，在之后该包下的实体类需要配置的时候就只需要写类名就行了，不用写全名
+logging:
+  level:
+    com.hmdp: debug # 设置日志级别
