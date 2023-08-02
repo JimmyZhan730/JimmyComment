@@ -1,5 +1,6 @@
 # JimmyComment-HuaWei
-# 吉米点评系统
+# 社区点评系统
+# 作者：Jimmy
 ## 技术栈：Spring、SpringBoot、Mybatis-Plus、MySQL、Redis
 ## 项⽬简介：
 本项⽬是⼀个以社交为核⼼的新电商项⽬，向⽤⼾提供了短信登录、发布/阅览帖⼦、商铺分类检索、点赞关注、
